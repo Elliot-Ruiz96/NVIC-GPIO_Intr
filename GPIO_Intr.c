@@ -3,23 +3,7 @@
 #include "fsl_gpio.h"
 #include "fsl_port.h"
 #include "fsl_common.h"
-
-uint8_t g_ButtonPress = 0;
-
- gpio_pin_config_t sw_config = {
-        kGPIO_DigitalInput,
-        0,
-    };
-
-
-gpio_pin_config_t led_config = {
-        kGPIO_DigitalOutput,
-        0,
-    };
-
-#define PIN22         22u
-#define PIN6         6u
-#define PIN4         4u
+#include "GPIO.h"
 
 void PORTA_IRQHandler(void)
 {

@@ -5,7 +5,7 @@
 #include "fsl_common.h"
 #include "GPIO.h"
 
-volatile uint8_t g_ButtonPress; 0;
+volatile uint8_t g_ButtonPress = 0;
 
 void PORTA_IRQHandler(void)
 {
